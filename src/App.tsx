@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App : React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2 className="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-50 tracking-tight mb-8">
-          React + Tailwind CSS
+          React + Tailwind CSS + TypeScript
         </h2>
       </header>
     </div>
