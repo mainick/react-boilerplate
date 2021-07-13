@@ -1,40 +1,29 @@
 {
-  "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "jest": {
-      "version": "detect"
-    }
-  },
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "jest/globals": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:react/recommended",
-    "airbnb-typescript/base",
+    "airbnb",
     "prettier"
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "sourceType": "module"
   },
   "plugins": [
-    "import",
     "jest",
+    "import",
+    "jsx-a11y",
     "react",
-    "react-hooks",
-    "@typescript-eslint",
     "prettier"
   ],
   "rules": {
@@ -42,14 +31,11 @@
       1,
       {
         "extensions": [
-          ".tsx",
-          ".ts"
+          ".js",
+          ".jsx"
         ]
       }
     ],
-    "react/react-in-jsx-scope": 0,
-    "react/jsx-props-no-spreading": 0,
-    "arrow-body-style": 0,
-    "import/extensions": 0
+    "react/react-in-jsx-scope": 0
   }
 }
